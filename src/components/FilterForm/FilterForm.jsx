@@ -1,4 +1,5 @@
 import { MyLabel, MyInput } from './FilterForm.styled';
+import PropTypes from 'prop-types';
 
 export const FilterForm = ({ onChange }) => {
 	return (
@@ -12,4 +13,7 @@ export const FilterForm = ({ onChange }) => {
 			/>
 		</MyLabel>
 	);
+};
+FilterForm.propTypes = {
+	onChange: PropTypes.func.isRequired,
 };
